@@ -1,0 +1,27 @@
+// 设备树版本
+/dts-v1/;
+// 插件
+/plugin/;
+
+
+/{
+	fragment@0{
+		// 通过路径的方式是：target-path 
+		target-path = "/typecoh/myirq";
+		__overlay__ {
+			overlay_node{
+				status = "okey";
+			};
+		};
+	};
+	
+	fragment@1{
+		// 通过别名的方式是：target
+		target = <&leds>;
+		__overlay__ {
+			overlay_node{
+				status = "okey";
+			};
+		};
+	};
+};

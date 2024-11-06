@@ -1,0 +1,12 @@
+/dts-v1/;
+/ {
+	// 使用 PK_PB5 需要包含头文件
+	#include "dt-bindings/pinctrl/rockchip.h"
+	// 使用 IRQ_TYPE_EDGE_RISING需要包含头文件
+	#include "dt-bindings/gpio/gpio.h"
+	led:led@1{
+		compatible = "led";
+		// gpio3_B4 是自定义
+		gpios = <@gpio3 PK_PB4 GPIO_ACTIVE_HIGH>
+	}
+};

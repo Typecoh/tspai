@@ -1,0 +1,8 @@
+/dts-v1/;
+/plugin/;
+
+&myled {
+	overlay_node{
+		status = "okay";
+	};
+};

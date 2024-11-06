@@ -1,0 +1,1 @@
+cmd_/home/samba/vscode/tspiDirve/26Timer/timer.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack   --build-id  -T ./scripts/module-common.lds -o /home/samba/vscode/tspiDirve/26Timer/timer.ko /home/samba/vscode/tspiDirve/26Timer/timer.o /home/samba/vscode/tspiDirve/26Timer/timer.mod.o;  true

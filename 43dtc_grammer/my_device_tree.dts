@@ -1,0 +1,19 @@
+/dts-v1/;
+/ {
+
+    chosen{
+
+    };
+    
+    // 添加一个子节点
+    childNoe{
+
+        // 子子节点
+        childNoe_childnoe{
+
+        };
+
+    };
+};
+
+

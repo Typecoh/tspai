@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/samba/tspai/kernel",
+                "/home/samba/tspai/kernel/include",
+                "/usr/src/linux-headers-5.4.0-150-generic/include",
+                "/usr/src/linux-headers-5.4.0-150-generic/arch/x86/include",
+                "/usr/src/linux-headers-5.4.0-150-generic/arch/x86/include/generated",
+                // "/usr/include/c++/7",
+                // "/usr/include/x86_64-linux-gnu/c++/7",
+                // "/usr/include/c++/7/backward",
+                // "/usr/lib/gcc/x86_64-linux-gnu/7/include",
+                // "/usr/local/include",
+                // "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed",
+                // "/usr/include/x86_64-linux-gnu",
+                // "/usr/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

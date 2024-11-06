@@ -1,0 +1,36 @@
+// 设备树版本
+/dts-v1/;
+// 插件
+/plugin/;
+// 向/typecoh/myirq这个节点中添加 overlay_node 节点
+/*
+添加之前
+myirq {
+    compatible = "my_myirq";
+    // 官方给的中断
+    interrupt-parent = <&gpio0>;
+    // RK_PA3  0 * 32 + 0 * 8 + 3 => 3
+    // 触发方式是 低电平触发
+    interrupts = <3 IRQ_TYPE_LEVEL_LOW>;
+};
+*/
+&{/typecoh/myirq}{
+    overlay_node{
+        status = "okay";
+    };
+};
+
+/*
+添加之后
+myirq {
+    compatible = "my_myirq";
+    // 官方给的中断
+    interrupt-parent = <&gpio0>;
+    // RK_PA3  0 * 32 + 0 * 8 + 3 => 3
+    // 触发方式是 低电平触发
+    interrupts = <3 IRQ_TYPE_LEVEL_LOW>;
+    overlay_node{
+        status = "okay";
+    };
+};
+*/

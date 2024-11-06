@@ -1,0 +1,20 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+
+			overlay_node {
+				status = "okay";
+			};
+		};
+	};
+
+	__fixups__ {
+		leds = "/fragment@0:target:0";
+	};
+};
+ 

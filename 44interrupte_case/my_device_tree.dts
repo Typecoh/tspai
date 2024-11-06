@@ -1,0 +1,83 @@
+cpus {
+	#address-cells = <2>;
+	cpu-map {
+		socket0 {
+			cluster0 {
+				cluster0 {
+					core0 {
+						thread0 {
+							cpu = <&CPU0>;
+						};
+						thread1 {
+							cpu = <&CPU1>;
+						};
+					};
+					core1 {
+						thread0 {
+							cpu = <&CPU3>;
+						};
+						thread1 {
+							cpu = <&CPU4>;
+						};
+					};
+				};
+				cluster1 {
+					core0 {
+						thread0 {
+							cpu = <&CPU5>;
+						};
+						thread1 {
+							cpu = <&CPU6>;
+						};
+					};
+					core1 {
+						thread0 {
+							cpu = <&CPU7>;
+						};
+						thread1 {
+							cpu = <&CPU8>;
+						};
+					};
+				};
+			};
+			cluster1 {
+				cluster0 {
+				core0 {
+					thread0 {
+						cpu = <&CPU9>;
+					};
+					thread1 {
+						cpu = <&CPU10>;
+					};
+				};
+				core1 {
+					thread0 {
+						cpu = <&CPU11>;
+					};
+					thread1 {
+						cpu = <&CPU12>;
+					};
+				};
+			};
+			cluster1 {
+				core0 {
+					thread0 {
+						cpu = <&CPU13>;
+					};
+					thread1 {
+						cpu = <&CPU14>;
+					};
+				};
+				core1 {
+					thread0 {
+						cpu = <&CPU6>;
+					};
+					thread1 {
+						cpu = <&CPU7>;
+					};
+				};
+			};
+			};
+		};
+	};
+};

@@ -1,0 +1,1 @@
+cmd_/home/samba/vscode/tspiDirve/29ioctl_address/main.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack   --build-id  -T ./scripts/module-common.lds -o /home/samba/vscode/tspiDirve/29ioctl_address/main.ko /home/samba/vscode/tspiDirve/29ioctl_address/main.o /home/samba/vscode/tspiDirve/29ioctl_address/main.mod.o;  true
